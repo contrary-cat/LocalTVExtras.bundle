@@ -138,7 +138,7 @@ class localTVExtra(Agent.TV_Shows):
   languages = [Locale.Language.NoLanguage]
   primary_provider = False
   persist_stored_files = False
-  contributes_to = ['com.plexapp.agents.thetvdb', 'com.plexapp.agents.themoviedb', 'com.plexapp.agents.none']
+  contributes_to = ['com.plexapp.agents.thetvdb', 'com.plexapp.agents.themoviedb', 'com.plexapp.agents.hama', 'com.plexapp.agents.none']
 
   def search(self, results, media, lang):
     results.Append(MetadataSearchResult(id = 'null', score = 100))

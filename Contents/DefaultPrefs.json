@@ -6,7 +6,7 @@
 },
 {
   "id":"season_names",
-  "label":"Alternative names for season folders, comma separated.",
+  "label":"Alternative names for season folders, comma separated",
   "type":"text",
   "default":""
 }]
