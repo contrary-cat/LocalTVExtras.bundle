@@ -18,7 +18,7 @@ Based on the Plex requirements, the agent will classify folders named "Season" o
 
 ## Extra File Naming and Folder Structure
 
-File naming is similar to the naming for [Local Movie Trailers and Extras](https://support.plex.tv/articles/200220677-local-media-assets-movies/?_ga=2.40982114.1159795442.1544650582-1727179431.1482687957) using the Plex agents, but has some specific requirements to help organise the files.
+File naming is similar to the naming for [Local Movie Trailers and Extras](https://support.plex.tv/articles/200220677-local-media-assets-movies/#toc-3) using the Plex agents, but has some specific requirements to help organise the files.
 
 ### Inline Show Extras
 
