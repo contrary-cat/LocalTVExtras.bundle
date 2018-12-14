@@ -1,0 +1,12 @@
+[{
+  "id":"ep_season_extras",
+  "label":"Assign Extras to Episodes, Seasons or Shows based on folder structure",
+  "type":"bool",
+  "default":"false"
+},
+{
+  "id":"season_names",
+  "label":"Alternative names for season folders, comma separated.",
+  "type":"text",
+  "default":""
+}]
