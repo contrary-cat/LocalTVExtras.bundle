@@ -90,4 +90,4 @@ An extra should be named:
 
 ## Thumbnails
 
-If you have an image that you would like to use as the thumbnail for your local extra video, then it will be detected if it is placed in the same directory as the extra, and with the same filename except for the extension (which, at the moment, should be jpg).
+If you have an image that you would like to use as the thumbnail for your local extra video, then it will be detected if it is placed in the same directory as the extra, and with the same filename except for the extension.
