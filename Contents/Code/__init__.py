@@ -94,12 +94,7 @@ def FindExtras(metadata, paths, basename=None):
               for f in os.listdir(d):
                 Log(f)
                 (fn, ext) = os.path.splitext(f)
-                if not fn.startswith('.') and ext[1:].lower() in VIDEO_EXTS and (not basename or os.path.basename(path) == basename):
-                  # On Windows, os.walk() likes to prepend the "extended-length path prefix" to root.
-                  # This causes issues later on when this path is converted to the file:// URL for
-                  # serialization and later consumption by PMS, so clean it up here.
-                  root = re.sub(r'^\\\\\?\\', '', root)
-                  
+                if not fn.startswith('.') and ext[1:].lower() in VIDEO_EXTS and (not basename or os.path.basename(path) == basename):                  
                   AddExtra(extras, key, fn, os.path.join(d, f))
 
       # Look for filenames following the "-extra" convention and a couple of other special cases.

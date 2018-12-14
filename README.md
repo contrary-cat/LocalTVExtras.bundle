@@ -2,6 +2,8 @@
 
 This agent detects local trailer and extra videos in a TV Show directory and adds them to Plex. It can contribute to the default Personal Media Shows, TheTVDB and The Movie Database TV Agents as well as the HAMA TV Agent.
 
+The agent has only had limited testing, so may not work perfectly for everyone.
+
 ## Settings
 
 ### How extras are organised on the server
