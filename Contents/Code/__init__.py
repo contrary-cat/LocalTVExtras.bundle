@@ -37,11 +37,14 @@ def AddExtra(extras, extra_type, extra_title, extra_path):
   else:
     sort_title = extra_title
     image = ''
+    IMAGE_EXTS = ['jpg', 'jpeg', 'png', 'tiff', 'gif', 'jp2']
     (file,ext) = os.path.splitext(extra_path)
-    thumbnail = file+".jpg" #might be good to support other image types, like png?
-    if os.path.isfile(thumbnail):
-      Log('inline thumbnail found for file %s', extra_path)
-      image = "file://"+thumbnail
+    for img in IMAGE_EXTS:
+      thumbnail = file+"."+img
+      if os.path.isfile(thumbnail):
+        Log('inline thumbnail found for file %s', extra_path)
+        image = "file://"+thumbnail
+        break
     #if image_data is not None: #unfortunately no support for data uris; so can't think of a way to allow images embedded in mp4
       #image = "data:image/jpeg;base64,"+image_data.encode('base64').replace('\n','')
 
