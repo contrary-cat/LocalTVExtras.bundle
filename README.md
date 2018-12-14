@@ -4,13 +4,13 @@ This agent detects local trailer and extra videos in a TV Show directory and add
 
 ## Settings
 
-###How extras are organised on the server
+### How extras are organised on the server
 
 Although the Plex Media Server supports adding, and serving, extras at all levels in a TV Show -- episode, season and show -- not all of the Plex clients do. Therefore, by default the agent will add any extras that are found to the TV Show level only.
 
 However, if you have a client that supports extras at the episode or season level, then you can enable the setting **Assign Extras to Episodes, Seasons or Shows based on folder structure**.
 
-###TV Show folder structure
+### TV Show folder structure
 
 In order to associate extras only with the show that they belong to, and also to add then at the correct level. The agent needs to have some idea of the folder structure used to organise your files.
 
