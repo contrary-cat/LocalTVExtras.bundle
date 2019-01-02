@@ -20,8 +20,9 @@ def FindShowDir(dirs):
   
 def IsShowFolder(dirs):
   showfolder = False;
-  season_names = [x.strip().lower() for x in Prefs['season_names'].split(',')] # any user defined season folder names
-  season_names += ['season','specials'] #default plex season folder names
+  season_names = ['season','specials'] #default plex season folder names
+  if Prefs['season_names']:
+    season_names += [x.strip().lower() for x in Prefs['season_names'].split(',')] # any user defined season folder names
   for d in dirs:
     if os.path.basename(d).lower().startswith(tuple(season_names)):
       Log("%s is a Season Folder", os.path.basename(d))
