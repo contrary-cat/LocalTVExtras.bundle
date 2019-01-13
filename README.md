@@ -56,7 +56,7 @@ Where `-Extra_Type` is one of:
 * `Shorts`
 * `Trailers`
 * `Other`
-* `Extra`
+* `Extras`
 
 ### Season Extras
 
