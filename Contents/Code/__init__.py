@@ -120,7 +120,7 @@ def FindExtras(metadata, paths, basename=None):
               AddExtra(extras, key, title, os.path.join(path, f))
   
       # Make sure extras are sorted alphabetically and by type.
-      type_order = ['trailer', 'behindthescenes', 'interview', 'deleted', 'scene', 'sample', 'featurette', 'short', 'other']
+      type_order = ['trailer', 'behindthescenes', 'interview', 'deleted', 'scene', 'sample', 'featurette', 'short', 'other', 'extra']
       extras.sort(key=lambda e: e['sort_title'])
       extras.sort(key=lambda e: type_order.index(e['type']))
       
