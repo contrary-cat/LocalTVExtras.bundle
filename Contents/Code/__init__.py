@@ -49,6 +49,7 @@ def AddExtra(extras, extra_type, extra_title, extra_path):
     #if image_data is not None: #unfortunately no support for data uris; so can't think of a way to allow images embedded in mp4
       #image = "data:image/jpeg;base64,"+image_data.encode('base64').replace('\n','')
 
+    extra_path = unicodedata.normalize('NFC',unicode(extra_path)) # This works for me, but the full function def unicodize(s) in helpers.py in the Plex Local Media agent may be needed for servers on other platforms - to be confirmed
     Log('Found %s extra: %s' % (extra_type, extra_title))
     extras.append({'type' : extra_type, 'title' : extra_title, 'sort_title' : sort_title, 'file' : extra_path, 'thumb' : image})
     extras_list.append(extra_path)
