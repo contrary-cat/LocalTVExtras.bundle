@@ -1,5 +1,5 @@
 #local media assets agent
-import os, string, re
+import os, string, re, unicodedata
   
 extras_list = []
 
