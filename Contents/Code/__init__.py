@@ -55,7 +55,7 @@ def AddExtra(extras, extra_type, extra_title, extra_path):
     extras_list.append(extra_path)
   
   
-def FindExtras(metadata, paths, basename=None):
+def FindExtras(media_title, metadata, paths, basename=None):
   # Do a quick check to make sure we've got the extra types available in this framework version,
   # and that the server is new enough to support them.
   #
@@ -103,8 +103,8 @@ def FindExtras(metadata, paths, basename=None):
       for f in os.listdir(path):
         (fn, ext) = os.path.splitext(f)
 
-        # Files named exactly 'trailer' or starting with 'movie-trailer'.
-        if (fn == 'trailer' or fn.startswith('movie-trailer')) and not fn.startswith('.') and ext[1:] in config.VIDEO_EXTS and not basename:
+        # Files named exactly 'trailer'.
+        if (fn.lower() == 'trailer') and not fn.startswith('.') and ext[1:] in VIDEO_EXTS and not basename:
           Log('Found trailer extra, renaming with title: ' + media_title)
           AddExtra(extras, key, media_title, os.path.join(path, f))
 
@@ -157,19 +157,19 @@ class localTVExtra(Agent.TV_Shows):
         episodename = os.path.splitext(os.path.basename(episodeMedia.parts[0].file))[0]
         if Prefs['ep_season_extras']:
           Log('Searching for extras for episode: S%sE%s',s,e)
-          FindExtras(episodeMetadata, {directory : True}, episodename) 
+          FindExtras("{} S{}E{}".format(media.title,  s.zfill(2), e.zfill(2)), episodeMetadata, {directory : True}, episodename) 
         else:
           Log('Not searching for episode extras. Extras will only be added at the show level.')
         #if there is a sub-directory for just this episode, then go up one before adding it to the list of paths
         if(os.path.basename(directory) == episodename): 
           if not Prefs['ep_season_extras']:
-            FindExtras(metadata, {directory : True}) #If extras are being added at the show level AND episode subfolders are being used and contain extras, then a separate FindExtras is needed, since otherwise the [show or season folder] logic will mess things up.
+            FindExtras(media.title, metadata, {directory : True}) #If extras are being added at the show level AND episode subfolders are being used and contain extras, then a separate FindExtras is needed, since otherwise the [show or season folder] logic will mess things up.
           directory = os.path.split(directory)[0]
         dirs[directory] = True
         
       if Prefs['ep_season_extras'] and not IsShowFolder(dirs):
         Log('Searching for extras for season %s', s)
-        FindExtras(metadata.seasons[s], dirs) #check for metadata to add to the season
+        FindExtras("{} Season {}".format(media.title, s), metadata.seasons[s], dirs) #check for metadata to add to the season
       else:
         Log('Not searching for season %s extras, extras will only be added at the show level.', s)
     
@@ -181,4 +181,4 @@ class localTVExtra(Agent.TV_Shows):
     
     Log('directory to search for extras: %s', string.join(dirs, ", "))
 
-    FindExtras(metadata, dirs)
+    FindExtras(media.title, metadata, dirs)
