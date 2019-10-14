@@ -111,7 +111,7 @@ def FindExtras(media_title, metadata, paths, basename=None):
         # Files following the "-extra" convention.
         else:
           for key in extra_type_map.keys():
-            if not fn.startswith('.') and fn.endswith('-' + key) and ext[1:] in VIDEO_EXTS and ((not basename) or fn.startswith(basename)):
+            if not fn.startswith('.') and fn.endswith('-' + key) and ext[1:] in VIDEO_EXTS and ((not basename) or fn.startswith(basename) or os.path.basename(path) == basename):
               title = '-'.join(fn.split('-')[:-1])
               if(basename and not (title == basename) and title.startswith(basename)):
                 title = "".join(title.rsplit(basename))
