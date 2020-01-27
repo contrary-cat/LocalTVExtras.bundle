@@ -4,6 +4,9 @@ import os, string, re, unicodedata
 extras_list = []
 
 def Start():pass # With thanks to zoltair
+
+def ValidatePrefs():
+  pass
   
 def FindShowDir(dirs):
   final_dirs = {}
