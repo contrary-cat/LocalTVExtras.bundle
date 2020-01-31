@@ -96,7 +96,7 @@ If you have an image that you would like to use as the thumbnail for your local 
 
 ## Installation
 
-Instructions for installing a 3rd party Plex agent can be found on the Plex support website [How do I manually install a plugin?](https://support.plex.tv/articles/201187656-how-do-i-manually-install-a-plugin/)
+Instructions for installing a 3rd party Plex agent can be found on the Plex support website: [How do I manually install a plugin?](https://support.plex.tv/articles/201187656-how-do-i-manually-install-a-plugin/)
 
 ## Usage
 
