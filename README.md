@@ -90,6 +90,18 @@ An extra should be named:
 
 * `TV Shows/TVShowName/Season number/TVShowName - S##E## - Episode Name-Descriptive_name-Extra_Type.ext`
 
-## Thumbnails
+### Thumbnails
 
 If you have an image that you would like to use as the thumbnail for your local extra video, then it will be detected if it is placed in the same directory as the extra, and with the same filename except for the extension.
+
+## Installation
+
+Instructions for installing a 3rd party Plex agent can be found on the Plex support website [How do I manually install a plugin?](https://support.plex.tv/articles/201187656-how-do-i-manually-install-a-plugin/)
+
+## Usage
+
+Save your extra files in your TV Show directory as described above. Once done, navigate to the show in Plex/Web. Click on the more button, which can be found in the top/right of the window.
+
+Then click "Refresh Metadata" from the drop-down menu.
+
+Wait until the metadata refresh is complete, and then your TV Show extras should be added to the database.
