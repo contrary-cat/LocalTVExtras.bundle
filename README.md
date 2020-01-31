@@ -100,8 +100,12 @@ Instructions for installing a 3rd party Plex agent can be found on the Plex supp
 
 ## Usage
 
-Save your extra files in your TV Show directory as described above. Once done, navigate to the show in Plex/Web. Click on the more button, which can be found in the top/right of the window.
+Save your extra files in your TV Show directory as described above. Once done, navigate to the show in Plex/Web. Click on the more button, which can be found in the top-right corner of the window.
+
+![Plex-more](https://user-images.githubusercontent.com/45716135/73559551-2e689d80-444d-11ea-9b23-02ff45297e85.png)
 
 Then click "Refresh Metadata" from the drop-down menu.
+
+![Plex-refresh](https://user-images.githubusercontent.com/45716135/73559594-3e807d00-444d-11ea-9c49-e3bd358bfd83.png)
 
 Wait until the metadata refresh is complete, and then your TV Show extras should be added to the database.
