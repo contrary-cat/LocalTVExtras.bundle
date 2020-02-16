@@ -109,3 +109,28 @@ Then click "Refresh Metadata" from the drop-down menu.
 ![Plex-refresh](https://user-images.githubusercontent.com/45716135/73559594-3e807d00-444d-11ea-9c49-e3bd358bfd83.png)
 
 Wait until the metadata refresh is complete, and then your TV Show extras should be added to the database.
+
+## Client Support
+
+I don't have all these clients myself, so this is mostly a summary of what I have been told on the [thread in the plex forums](https://forums.plex.tv/t/local-tv-extras-agent/226648).
+
+Episodes only:
+* iOS client
+
+Show only:
+* Plex Media Player
+* Plex Web Client
+* The new Plex for Mac/Plex for Windows clients
+
+Show and Season:
+* Roku Client
+* Kodi with the [official Plex Add-on](https://kodi.tv/addon/scripts-video-add-ons/plex)
+ (This also includes MRMC with the same Plex Add-on)
+
+Show, Season and Episode:
+* The Android client (I believe that this includes Android TV/NVIDIA Shield as well as Android Phones & Tablets)
+
+No TV Extras:
+* The Apple TV client
+
+The ones I can personally confirm are Plex Web, Plex Media Player, Plex for Mac, Plex for Kodi, iOS and Apple TV.
