@@ -131,7 +131,7 @@ Show, Season and Episode:
 * Android mobile client
 
 All for Show & Season, only trailers for Episode:
-* Android TV client
+* Android TV/NVIDIA Shield
 
 No TV Extras:
 * Apple TV client
