@@ -119,18 +119,21 @@ Episodes only:
 
 Show only:
 * Plex Media Player
-* Plex Web Client
+* Plex Web client
 * The new Plex for Mac/Plex for Windows clients
 
 Show and Season:
-* Roku Client
+* Roku client
 * Kodi with the [official Plex Add-on](https://kodi.tv/addon/scripts-video-add-ons/plex)
  (This also includes MRMC with the same Plex Add-on)
 
 Show, Season and Episode:
-* The Android client (I believe that this includes Android TV/NVIDIA Shield as well as Android Phones & Tablets)
+* Android mobile client
+
+All for Show & Season, only trailers for Episode:
+* Android TV client
 
 No TV Extras:
-* The Apple TV client
+* Apple TV client
 
 The ones I can personally confirm are Plex Web, Plex Media Player, Plex for Mac, Plex for Kodi, iOS and Apple TV.
