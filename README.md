@@ -114,9 +114,6 @@ Wait until the metadata refresh is complete, and then your TV Show extras should
 
 I don't have all these clients myself, so this is mostly a summary of what I have been told on the [thread in the plex forums](https://forums.plex.tv/t/local-tv-extras-agent/226648).
 
-Episodes only:
-* iOS client
-
 Show only:
 * Plex Media Player
 * Plex Web client
@@ -129,6 +126,7 @@ Show and Season:
 
 Show, Season and Episode:
 * Android mobile client
+* iOS client (as of version 7.1)
 
 All for Show & Season, only trailers for Episode:
 * Android TV/NVIDIA Shield
